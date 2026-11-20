@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF7ED;
+    color: #352E2A;
+    font-family: 'Golos Text', sans-serif;
+    padding-top: 60px;
+}
+
+.cabecera {
+    height: 60px;
+    background-color: #FFF7ED;
+    border: 1px solid #4F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: #2D3229;
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo svg {
+    color: #A22040;
+}
+
+
+.cabecera input {
+    width: 30%;
+    padding: 8px;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.cabecera nav {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecera nav a {
+    color: #2D3229;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cabecera nav .inicio {
+    border: 1px solid #352E2A;
+    padding: 7px 25px;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 25px;
+    height: 285px;
+    border: 1px solid #4F4F4F;
+}
+
+.texto-presentacion {
+    width: 38%;
+}
+
+.texto-presentacion h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 38px;
+    color: #352E2A;
+    margin-bottom: 15px;
+}
+
+.texto-presentacion p {
+    color: #4F4F4F;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #A22040;
+    color: #FFF7ED;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #2D3229;
+}
+
+.imagen-principal {
+    width: 62%;
+    height: 250px;
+    background-color: #E5DDD3;
+}
+.imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 80%;
+}
+
+.contenido {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.publicaciones {
+    width: 77%;
+    display: flex;
+    gap: 20px;
+}
+
+.publicacion {
+    width: 33.33%;
+    border: 1px solid #4F4F4F;
+    padding: 8px;
+    background-color: #FFF7ED;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 35px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #E5DDD3;
+    border-radius: 50%;
+}
+
+.usuario h2 {
+    font-size: 13px;
+    color: #2D3229;
+}
+
+.opciones {
+    margin-left: auto;
+    color: #A22040;
+}
+
+.imagen-plato {
+    height: 115px;
+    background-color: #E5DDD3;
+    margin: 5px 0 10px;
+}
+
+.me-gusta {
+    background-color: #FFF7ED;
+    border: 1px solid #A22040;
+    padding: 7px 18px;
+    color: #352E2A;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.me-gusta:hover {
+    background-color: #A22040;
+    color: #FFF7ED;
+}
+
+.reto {
+    width: 23%;
+    border: 1px solid #4F4F4F;
+    padding: 12px;
+    background-color: #FFF7ED;
+}
+
+.reto h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: #A22040;
+    border-bottom: 1px solid #4F4F4F;
+    padding-bottom: 12px;
+}
+
+.reto p {
+    color: #4F4F4F;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.reto .boton {
+    display: block;
+    text-align: center;
+}
+
+.pie {
+    border: 1px solid #4F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 25px;
+}
+
+.pie nav {
+    display: flex;
+    gap: 30px;
+}
+
+.pie nav a {
+    color: #2D3229;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.pie nav a:hover {
+    color: #A22040;
+}
+
+.imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.precarga {
+    position: fixed;
+    inset: 0;
+    background-color: #FFF7ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ocultar 0.3s ease 2s forwards;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #E5DDD3;
+    border-top-color: #A22040;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes ocultar {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
